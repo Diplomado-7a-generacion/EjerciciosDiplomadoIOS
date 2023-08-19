@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "String Interpolation Test",
+      "setup": "",
+      "run": "cd GitExercisesPlayground.playground && cd Pages && cd StringInterpolation.xcplaygroundpage && swift Contents.swift",
+      "input": "",
+      "output": "Mexico City has an elevation of 2240 m",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "Array Is Not Empty Test",
+      "setup": "",
+      "run": "cd GitExercisesPlayground.playground && cd Pages && cd Arrays.xcplaygroundpage && swift Contents.swift buy_milk watch_tv play_videogames",
+      "input": "",
+      "output": "false",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "Array Is Empty Test",
+      "setup": "",
+      "run": "cd GitExercisesPlayground.playground && cd Pages && cd Arrays.xcplaygroundpage && swift Contents.swift",
+      "input": "",
+      "output": "true",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "Set Is Not Superset",
+      "setup": "",
+      "run": "cd GitExercisesPlayground.playground && cd Pages && cd Sets.xcplaygroundpage && swift Contents.swift",
+      "input": "",
+      "output": "false",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "Set Is Superset",
+      "setup": "",
+      "run": "cd GitExercisesPlayground.playground && cd Pages && cd Sets.xcplaygroundpage && swift Contents.swift Denver Chicago Jacksonville",
+      "input": "",
+      "output": "true",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    }
+  ]
+}
