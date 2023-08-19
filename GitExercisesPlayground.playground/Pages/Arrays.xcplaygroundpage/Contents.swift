@@ -7,4 +7,4 @@ let myTodoList: [String] = CommandLine.arguments.count == 1 ? [] : CommandLine.a
 //let myTodoList: [String] = ["go to the supermarket", "buy a new iPhone", "watch some Apple TV+ shows"]
 print(myTodoList.isEmpty)
 
-// print true if the array is empty and false if it contains at least one elemento
+// print true if the array is empty and false if it contains at least one elemento m
