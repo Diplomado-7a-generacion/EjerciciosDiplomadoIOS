@@ -7,4 +7,4 @@ import Foundation
 let myTodoList: [String] = ["go to the supermarket", "buy a new iPhone", "watch some Apple TV+ shows"]
 print(myTodoList.isEmpty)
 
-// print true if the array is empty and false if it contains at least one element
+// print true if the array is empty and false if it contains at least one elemento
