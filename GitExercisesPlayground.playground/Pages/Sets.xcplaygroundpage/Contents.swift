@@ -5,10 +5,10 @@ import Foundation
 
 let myCities: Set = Set(CommandLine.arguments.dropFirst())
 //let myCities: Set = ["Atlanta", "Chicago", "Jacksonville", "New York", "Denver"]
-
 let yourCities: Set = ["Chicago", "Denver", "Jacksonville"]
+print(myCities.isSuperset(of : yourCities))
 
-
+//otro ejercicio
 // print true if the myCities Set contains all the cities in yourCities and false otherwise
 
 
