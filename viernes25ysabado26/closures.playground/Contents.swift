@@ -1,12 +1,12 @@
 import UIKit
 //closures
 
-//let volunteerCounts = [1,3,40,32,2,53,77,13]
-//func isAscending(_ i: Int, _ j: Int) -> Bool {
-//    return i < j
-//}
-//let volunteeerSorted = volunteerCounts.sorted(by: isAscending)
-//print(volunteeerSorted)
+let volunteerCounts = [1,3,40,32,2,53,77,13]
+func isAscending(_ i: Int, _ j: Int) -> Bool {
+   return i < j
+}
+let volunteeerSorted = volunteerCounts.sorted(by: isAscending)
+print(volunteeerSorted)
 
 //let volunteeerSorted = volunteerCounts.sorted(by: {i, j in i < j })
 //print(volunteeerSorted)
@@ -46,27 +46,27 @@ import UIKit
 //print(volnteerAverage)
 //print(formatterAverageVolunteers)
 
-let volunteerCounts: [Int] = [1,2,3,4,5,6,78,9]
-let volunteerAverages: [Double] = [10.75,4.2,1.5,12.12]
-
-// map
-let roundedVolunteers = volunteerAverages.map{ number in
-    return Int(number)
-}
-print(roundedVolunteers)
+//let volunteerCounts: [Int] = [1,2,3,4,5,6,78,9]
+//let volunteerAverages: [Double] = [10.75,4.2,1.5,12.12]
+//
+//// map
+//let roundedVolunteers = volunteerAverages.map{ number in
+//    return Int(number)
+//}
+//print(roundedVolunteers)
 
 //filter
-let passingVolunteers = roundedVolunteers.filter{
-    number in return number >= 10
-}
-print(passingVolunteers)
-
+//let passingVolunteers = volunteerCounts.filter{
+//   number in return number >= 10
+//}
+//print(passingVolunteers)
+//
 //reduce
-let totalvolunteers = passingVolunteers.reduce(0) {partialResult,
+let totalvolunteers = volunteerCounts.reduce(0) {partialResult,
     number in
     return partialResult + number
 }
 print(totalvolunteers)
 
-let finalVolunteerDescription = passingVolunteers.reduce("The volunteers were ") { partialResult, number in return partialResult + "\(number)"}
-print(finalVolunteerDescription)
+//let finalVolunteerDescription = passingVolunteers.reduce("The volunteers were ") { partialResult, number in return partialResult + "\(number)"}
+//print(finalVolunteerDescription)
