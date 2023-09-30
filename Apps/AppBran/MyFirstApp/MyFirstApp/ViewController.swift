@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var nextButtonTapped: UIButton!
     
     @IBOutlet weak var photoTypeSwitch: UISwitch!
     @IBOutlet weak var titleTypeSwitch: UISwitch!
@@ -16,20 +17,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var textFieldViewController: UITextField!
     @IBOutlet weak var titleLabel: UILabel!
     
+    
     @IBOutlet weak var titleTextField: UITextField!{
         didSet {
             titleTextField.delegate = self
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
         //Es el que nos manda a otro viewcontroller
-        guard let destinationViewController = segue.destination as? ImageStackViewController else { return }
+        if let destinationViewController = segue.destination as? ImageStackViewController{
         destinationViewController.showCat = photoTypeSwitch.isOn
-        if titleTypeSwitch.isOn {
             destinationViewController.title = titleTextField.text
+        }else{
+            segue.destination.title = "Info"
         }
-        
-        
     }
     
     
@@ -50,9 +52,12 @@ class ViewController: UIViewController {
     
     @IBAction func nextButtonTapped(_ sender: UIButton){
         print(photoTypeSwitch.isOn)
+        if sender.tag == 0{
+            performSegue(withIdentifier: "SegueFromIntoMain", sender: nil)
+        }else{
+            performSegue(withIdentifier: "OpenInfo", sender: nil)
+        }
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
